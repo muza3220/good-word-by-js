@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cards_wrapper">
+
+            <div class="cards card__one">
+                <h2 class="users__title">USERS</h2>
+                <!--todo -------- USERS list  ---------->
+                <ul class="users_list"></ul>
+            </div>
+
+            <div class="cards card__two">
+                <h2 class="posts__title">POSTS</h2>
+                <!--! --------  POSTS list  ---------->
+                <ul class="posts_list"></ul>
+            </div>
+
+            <div class="cards card__three">
+                <h2 class="comments__title">COMMENTS</h2>
+                <!--? -------- COMMENTS list  ---------->
+                <ul class="comments_list"></ul>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <!--todo -------- USERS template  ---------->
+    <template id="users_template">
+        <li class="user__item">
+            <h5 class="user__name">John Don</h5>
+            <p class="paragraph__names email__p">email: <span class="paragraphs email__space">email</span></p>
+            <p class="address">address</p>
+            <div class="address__wrapper">
+                <p class="paragraph__names street__p">street: <span class="paragraphs street__space">street</span></p>
+                <p class="paragraph__names suite__p">suite: <span class="paragraphs suite__space">suite</span></p>
+                <p class="paragraph__names city__p">city: <span class="paragraphs city__space">city</span></p>
+                <p class="paragraph__names zipcode__p">zipcode: <span class="paragraphs zipcode__space">zipcode</span></p>
+                <p class="paragraph__names geo__p">geo: <a target="_blank" href="#" class="paragraphs geo__space">geo</a></p>
+            </div>
+            <a class="paragraph__names phone__link">phone: </a><span class="paragraphs phone__space"></span>
+            <a class="website__link" href="https://hildegard.org">hildegard.org</a>
+            <p class="company__p">company</p>
+            <div class="company__wrapper">
+                <p class="paragraph__names company__name__p">name: <span class="paragraphs company__name__space">company name</span></p>
+                <p class="paragraph__names company__phrase__p">catchPhrase: <span class="paragraphs company__phrase__space">company phrase</span></p>
+                <p class="paragraph__names company__bs__p">bs: <span class="paragraphs company__bs__space">company bs</span></p>
+            </div>
+        </li>
+    </template>
+
+    <!--! --------  POSTS template  ---------->
+    <template id="posts_template">
+        <li class="post__item">
+            <h4 class="post__title"></h4>
+            <p class="post__body"></p>
+        </li>
+    </template>
+
+    <!--? -------- COMMENTS template  ---------->
+    <template id="comments_template">
+        <li class="comment__item">
+            <h4 class="comment__name"></h4>
+            <p class="comment__body"></p>
+            <a class="comment__email" href="#"></a>
+        </li>
+    </template>
+
+    
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

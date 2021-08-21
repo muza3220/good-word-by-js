@@ -1,0 +1,170 @@
+
+/* FIRSTLY  (mains)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kristen ITC';
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.paragraph__names {
+    font-style: italic;
+    color: rgba(244, 0, 0, .6);
+    font-size: 14px;
+}
+
+
+.paragraphs {
+    font-style: normal;
+    color: #000;
+    font-size: 16px;
+}
+
+/* SECONDLY */
+.container {
+    max-width: 100%;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards_wrapper { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    width: 400px;
+    border: 1px solid #000;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.users__title, 
+.posts__title, 
+.comments__title {
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid lawngreen;
+    width: 200px;
+    border-radius: 5px;
+    border-top: none;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.posts__title { 
+    border-color: coral;
+}
+
+.comments__title {
+    border-color: deeppink;
+}
+
+
+/* TEMPLATE elements */
+.user__item,
+.post__item, 
+.comment__item {
+    padding: 10px;
+    cursor: help;
+    border-radius: 5px;
+    opacity: .8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.user__item:not(:last-child),
+.post__item:not(:last-child),
+.comment__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.user__item:hover, 
+.post__item:hover,
+.comment__item:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: scale(1.03);
+    opacity: 1;
+    transition: .2s;
+}
+
+.user__name {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.address, .company__p {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    font-size: 22px;
+    color: rgb(194, 26, 166);
+    border: 1px solid rgb(194, 26, 166);
+    border-bottom: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.company__p {
+    color: chartreuse;
+    border-color: chartreuse;
+}
+
+
+.address__wrapper, .company__wrapper {
+    border: 1px solid rgb(194, 26, 166);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.company__wrapper {
+    border-color: chartreuse;
+}
+
+
+.post__title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: coral;
+}
+
+.post__body {
+    opacity: .9;
+    font-size: 18px;
+}
+
+.comment__name {
+    margin-bottom: 15px;
+    color: deeppink;
+}
+
+.comment__body {
+    margin-bottom: 15px;
+    opacity: .9;
+}
+
+.website__link {
+    display: block;
+}
